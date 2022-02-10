@@ -30,7 +30,7 @@ const getFilterables = products => {
 }
 
 const BASE_URL =
-  process.env.GATSBY_MEDUSA_BACKEND_URL || "http://localhost:9000"
+  process.env.GATSBY_MEDUSA_BACKEND_URL || "https://adamebellgamesbackend.herokuapp.com"
 
 // This method should be deleted once you have added collections to your store
 exports.sourceNodes = async function ({
