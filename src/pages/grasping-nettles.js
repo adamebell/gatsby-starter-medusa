@@ -61,6 +61,7 @@ const IndexPage = ({ data }) => {
             Down on the Farm by Adam Bell (@adamebell) 
 
         You're of course welcome to write and release your own Quick Nettles—check out the Grasping Nettles Game Design Guide for more information on licensing for supplements, rules changes, or even full-blown hacks.
+        </p>
       </div>
       <div className="layout-base my-12 min-h-0">
         <Grid
