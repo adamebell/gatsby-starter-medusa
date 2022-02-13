@@ -50,7 +50,7 @@ const RegionPopover = () => {
                           "block py-3 text-sm w-full text-left hover:text-black"
                         )}
                       >
-                        {region.name} /{" "}
+                        {region} /{" "}
                         {region.currency_code.toUpperCase()}
                       </button>
                     )}
