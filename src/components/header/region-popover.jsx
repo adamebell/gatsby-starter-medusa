@@ -28,7 +28,7 @@ const RegionPopover = () => {
     >
       <div>
         <Menu.Button className="inline-flex justify-center w-full px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:text-gray-600">
-          Region: / {region.name} {region?.currency_code?.toUpperCase()}
+          Region Select {region?.currency_code?.toUpperCase()}
         </Menu.Button>
       </div>
 
