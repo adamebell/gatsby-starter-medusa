@@ -36,9 +36,8 @@ const RegionPopover = () => {
         <Menu.Items className="origin-top-right absolute right-0 mt-2 w-56 px-6 py-2 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
 
 
-          {regions?.map(region => {
-            return region.map((region, i) => {
-              return (
+          {regions?.map((region, i) => {
+            return (
                 <div className="border-b border-ui last:border-b-0" key={i}>
                   <Menu.Item>
                     {() => (
