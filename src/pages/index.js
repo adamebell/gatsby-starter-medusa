@@ -28,6 +28,7 @@ const IndexPage = ({ data }) => {
             <p className="mt-2 text-lg font-normal">
               tabletop games, for you
             </p>
+            <RegionPopover regions={mockData.regions} />
           </div>
         </div>
       </div>

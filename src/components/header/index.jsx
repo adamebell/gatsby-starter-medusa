@@ -127,7 +127,6 @@ const Header = () => {
 
           <div className="flex items-center justify-end">
             <div className="hidden lg:flex">
-              <RegionPopover regions={mockData.regions} />
               <AccountPopover customer={mockData.customer} />
             </div>
             <CartPopover cart={mockData.cart} />
