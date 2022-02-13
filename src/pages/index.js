@@ -6,7 +6,7 @@ import ProductListItem from "../components/products/product-list-item"
 import Grid from "../components/utility/grid"
 import SearchEngineOptimization from "../components/utility/seo"
 import { useCollections } from "../hooks/use-collections"
-import RegionPopover from "./region-popover"
+import RegionPopover from "../components/header/region-popover"
 
 
 const IndexPage = ({ data }) => {
