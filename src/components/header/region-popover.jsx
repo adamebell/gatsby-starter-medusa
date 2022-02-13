@@ -15,7 +15,7 @@ const RegionPopover = () => {
   const disabled = useRegionDisabled()
 
   const handleSelect = async (region) => {
-    updateRegion(regionz)
+    updateRegion(region)
   }
 
   return (
