@@ -93,6 +93,7 @@ const Product = ({ data, pageContext }) => {
               decrement={decreaseQuantity}
             />
           </div>
+          <div className="inline-flext mt4">Buy the game digitally <a href={`https://adamebell.itch.io/${product.key}`}>on itch.io</a></div>
           <div className="mt-12">
             {Object.keys(details).length > 0 && (
               <ProductExpandable title="Details">
