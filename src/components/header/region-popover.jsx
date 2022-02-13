@@ -15,8 +15,8 @@ const RegionPopover = () => {
 
   const disabled = useRegionDisabled()
 
-  const handleSelect = async (region) => {
-    updateRegion(region)
+  const handleSelect = async (region, country) => {
+    updateRegion(region, country.display_name)
   }
 
   return (
@@ -36,20 +36,21 @@ const RegionPopover = () => {
       <PopoverTransition>
         <Menu.Items className="origin-top-right absolute right-0 mt-2 w-56 px-6 py-2 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
           {regions?.map(region => {
+            return region.countries.map((country, i) => {
               return (
                 <div className="border-b border-ui last:border-b-0" key={i}>
                   <Menu.Item>
                     {() => (
                       <button
-                        onClick={() => handleSelect(region)}
+                        onClick={() => handleSelect(region, country)}
                         className={classNames(
-                          region === region.name
+                          country === country.display_name
                             ? "text-black"
                             : "text-ui-dark",
                           "block py-3 text-sm w-full text-left hover:text-black"
                         )}
                       >
-                        {region.name} /{" "}
+                        {country.display_name} /{" "}
                         {region.currency_code.toUpperCase()}
                       </button>
                     )}
