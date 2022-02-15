@@ -16,16 +16,11 @@ const MobileMenu = ({ open, setOpen }) => {
       name: "FAQ",
       path: "/faq",
     },
-    {
-      name: "Terms & Conditions",
-      path: "/terms-and-conditions",
-    },
   ]
 
   const {
     regions,
     region,
-    country,
     actions: { updateRegion },
   } = useRegion()
 
@@ -34,8 +29,8 @@ const MobileMenu = ({ open, setOpen }) => {
   const { customer } = useCustomer()
 
   const handleRegionChange = e => {
-    const { region, country } = JSON.parse(e.target.value)
-    updateRegion(region, country)
+    const { region } = JSON.parse(e.target.value)
+    updateRegion(region)
   }
 
   return (
@@ -157,39 +152,6 @@ const MobileMenu = ({ open, setOpen }) => {
                   </div>
                 </Fragment>
               )}
-            </div>
-
-            <div
-              className={classNames(
-                disabled ? "hidden" : "border-t border-gray-200 py-6 px-4"
-              )}
-            >
-              <select
-                className="shadow rounded-md border-none"
-                onChange={handleRegionChange}
-                defaultValue={JSON.stringify({ region, country })}
-              >
-                {regions.map((region, index) => {
-                  return (
-                    <Fragment key={index}>
-                      {region.countries.map(country => {
-                        return (
-                          <option
-                            key={country.display_name}
-                            value={JSON.stringify({
-                              region: region,
-                              country: country.display_name,
-                            })}
-                          >
-                            {country.display_name} /{" "}
-                            {region.currency_code.toUpperCase()}
-                          </option>
-                        )
-                      })}
-                    </Fragment>
-                  )
-                })}
-              </select>
             </div>
           </div>
         </Transition.Child>

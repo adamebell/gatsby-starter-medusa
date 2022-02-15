@@ -6,7 +6,6 @@ const defaultRegionContext = {
   /**
    * @type {string}
    */
-  country: undefined,
   regions: [],
   updateRegion: () => {},
 }
@@ -24,7 +23,6 @@ const reducer = (state, action) => {
       return {
         ...state,
         region: action.payload.region,
-        country: action.payload.country,
       }
     default:
       break
@@ -32,7 +30,6 @@ const reducer = (state, action) => {
 }
 
 const REGION = "medusa_region"
-const COUNTRY = "medusa_country"
 
 export const RegionProvider = props => {
   const [state, dispatch] = useReducer(reducer, defaultRegionContext)
@@ -67,14 +64,12 @@ export const RegionProvider = props => {
     const initRegion = () => {
       if (localStorage) {
         const regionJSON = localStorage.getItem(REGION)
-        const countryJSON = localStorage.getItem(COUNTRY)
 
-        if (regionJSON && countryJSON) {
+        if (regionJSON) {
           const region = JSON.parse(regionJSON)
-          const country = JSON.parse(countryJSON)
-          updateRegion(region, country)
+          updateRegion(region)
         } else {
-          updateRegion(regions[0], regions[0].countries[0].display_name)
+          updateRegion(regions[0])
         }
       }
     }
@@ -82,12 +77,11 @@ export const RegionProvider = props => {
     initRegion()
   }, [])
 
-  const updateRegion = (region, country) => {
+  const updateRegion = region => {
     localStorage.setItem(REGION, JSON.stringify(region))
-    localStorage.setItem(COUNTRY, JSON.stringify(country))
     dispatch({
       type: ACTIONS.UPDATE_REGION,
-      payload: { region: region, country: country },
+      payload: { region: region },
     })
   }
 
