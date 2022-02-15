@@ -16,7 +16,7 @@ const Footer = () => {
       url: "https://www.twitter.com/adamebell",
     },
     {
-      name: "Discord",
+      name: "HYPT discord",
       url: "https://discord.gg/WYGhWhUKz6",
     },
   ]
@@ -25,6 +25,10 @@ const Footer = () => {
     {
       name: "FAQ",
       to: "/faq",
+    },
+    {
+      name: "About",
+      to: "/about",
     },
   ]
 

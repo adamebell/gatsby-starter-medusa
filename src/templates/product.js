@@ -68,7 +68,7 @@ const Product = ({ data, pageContext }) => {
             {formatPrice(price?.amount, currencyCode, 1, taxRate)}
           </p>
           <p className="font-light">{product.description}</p>
-          <p className="inline-flex mt-4">Buy the game digitally <a className='text-blue-500' href={`https://adamebell.itch.io/${handle}`}> on itch.io</a></p>
+          <p className="inline-flex mt-4">Buy the game digitally <a className='text-blue-500' target='_blank' href={`https://adamebell.itch.io/${handle}`}>&nbsp;on itch.io</a></p>
           {product.options.map((option, index) => {
             return (
               <div key={index} className="mt-6">
