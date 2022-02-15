@@ -11,6 +11,15 @@ const CheckoutContact = ({ controller }) => {
         label={"Email"}
         autocomplete="email"
       />
+      <Select
+          label="Would you like to join the mailing list to get notified about new games?"
+          name="newsletter"
+          formik={newsletter}
+          defaultValue={""}
+          options={
+            {label:"Yes", value:"Yes"},{label:"No",value:"No"}
+        }
+        />
     </div>
   )
 }
