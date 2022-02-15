@@ -8,6 +8,10 @@ const Footer = () => {
       url: "https://itch.io/adamebell",
     },
     {
+      name: "join the newsletter",
+      url: "https://tinyletter.com/adamebell",
+    },
+    {
       name: "Twitter",
       url: "https://www.twitter.com/adamebell",
     },

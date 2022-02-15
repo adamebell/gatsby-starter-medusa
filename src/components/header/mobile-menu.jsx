@@ -9,8 +9,8 @@ import { classNames } from "../../utils/class-names"
 const MobileMenu = ({ open, setOpen }) => {
   const pages = [
     {
-      name: "Create return",
-      path: "/create-return",
+      name: "Join the newsletter!",
+      path: "https://tinyletter.com/adamebell",
     },
     {
       name: "FAQ",

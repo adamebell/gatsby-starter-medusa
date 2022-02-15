@@ -22,7 +22,7 @@ const Banner = () => {
         "bg-ui-medium h-10 flex items-center justify-between text-sm font-medium text-blue px-4 sm:px-6 lg:px-8"
       )}
     >
-      <p>Free shipping on all orders over $100</p>
+      <p>Welcome to adamebell.games! Grab yourself a game or two.</p>
       <button onClick={() => hideBanner()}>&times;</button>
     </div>
   )
