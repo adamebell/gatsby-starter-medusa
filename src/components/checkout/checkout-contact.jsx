@@ -1,5 +1,6 @@
 import React from "react"
-import Field from "../forms/field"import { TinyLetter, Email, Submit } from 'react-tinyletter'
+import Field from "../forms/field"
+import { TinyLetter, Email, Submit } from 'react-tinyletter'
 import styled from 'styled-components'
 
 const StyledEmail = styled(Email)`
