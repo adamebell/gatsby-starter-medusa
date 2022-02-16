@@ -21,14 +21,14 @@ const IndexPage = ({ data }) => {
         <div className="flex flex-col lg:flex-row items-center max-w-screen-2xl mx-auto">
           <StaticImage
             src="../images/hero-merch.png"
-            alt="A black Medusa hoodie and a white Medusa coffee mug"
+            alt="A drawing of a notecard, with a d6, d4, d8, and a pencil on it. Written on the notecard is D4 R3. Above the notecard it says adamebell.games, and below it says tabletop games, for you"
             placeholder="tracedSVG"
             className="w-full lg:w-1/2 h-auto"
           />
           <div>
-            <h1 className="text-4xl">adamebell.games</h1>
-            <p className="mt-2 text-lg font-normal">
-              tabletop games, for you
+            <h1 className="text-4xl">Welcome to adamebell.games!</h1>
+            <p className="m-2 text-lg font-normal">
+              I make tabletop rpgs and card games, and here is where you can buy them directly from me! 
             </p>
             <RegionPopover regions={data.regions} />
           </div>
