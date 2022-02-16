@@ -41,11 +41,6 @@ const CheckoutContact = ({ controller }) => {
         label={"Email"}
         autocomplete="email"
       />
-      <p className="mt-2 text-ui-dark text-xs">Enter your email to subscribe to my newsletter (optional)</p>
-      <TinyLetter list="adamebell">
-        <StyledEmail/>
-        <StyledSubmit/>
-      </TinyLetter>
     </div>
   )
 }
