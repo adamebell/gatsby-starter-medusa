@@ -18,6 +18,7 @@ const CheckoutAddress = ({ controller }) => {
 
   return (
     <div className="mt-3 mb-6">
+      <RegionTooltip></RegionTooltip>
       <SplitField>
         <Field
           label="First name"
@@ -70,7 +71,6 @@ const CheckoutAddress = ({ controller }) => {
             value: country.iso_2,
           }))}
         />
-        <RegionTooltip></RegionTooltip>
         <Field
           label="City"
           autocomplete="city-code"
