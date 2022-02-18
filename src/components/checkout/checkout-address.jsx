@@ -58,9 +58,7 @@ const CheckoutAddress = ({ controller }) => {
         formik={controller}
         defaultValue={controller.values.address_2}
       />
-      <SplitField>
         <RegionTooltip></RegionTooltip>
-      </SplitField>
       <SplitField>
         <Select
           label="Country"
