@@ -59,6 +59,9 @@ const CheckoutAddress = ({ controller }) => {
         defaultValue={controller.values.address_2}
       />
       <SplitField>
+        <RegionTooltip></RegionTooltip>
+      </SplitField>
+      <SplitField>
         <Select
           label="Country"
           autocomplete="country-code"
@@ -70,7 +73,6 @@ const CheckoutAddress = ({ controller }) => {
             value: country.iso_2,
           }))}
         />
-              <RegionTooltip></RegionTooltip>
         <Field
           label="City"
           autocomplete="city-code"
