@@ -2,6 +2,8 @@ import React from "react"
 import Field from "../forms/field"
 import { TinyLetter, Email, Submit } from 'react-tinyletter'
 import styled from 'styled-components'
+import SplitField from "../forms/split-field"
+
 
 const StyledEmail = styled(Email)`
   border-bottom-right-radius: 0;
@@ -34,6 +36,7 @@ const StyledSubmit = styled(Submit)`
 const CheckoutContact = ({ controller }) => {
   return (
     <div className="mt-3 mb-6">
+      <SplitField>
       <Field
         formik={controller}
         name={"email"}
@@ -41,6 +44,14 @@ const CheckoutContact = ({ controller }) => {
         label={"Email"}
         autocomplete="email"
       />
+      <Select
+        label="Would you like to join the mailing list?"
+        className="mt-4"
+        name="newsletter"
+        formik={controller}
+        options={{label:"Yes",value="yes"},{label:"No",value="no"}}
+      />
+      </SplitField>
     </div>
   )
 }
