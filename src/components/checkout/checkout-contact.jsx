@@ -3,6 +3,8 @@ import Field from "../forms/field"
 import { TinyLetter, Email, Submit } from 'react-tinyletter'
 import styled from 'styled-components'
 import SplitField from "../forms/split-field"
+import Select from "../forms/select-yes-no"
+
 
 
 const StyledEmail = styled(Email)`
@@ -49,7 +51,6 @@ const CheckoutContact = ({ controller }) => {
         className="mt-4"
         name="newsletter"
         formik={controller}
-        options={[{label:"Yes",value="yes"},{label:"No",value="no"}]}
       />
       </SplitField>
     </div>
