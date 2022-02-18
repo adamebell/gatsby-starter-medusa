@@ -23,7 +23,10 @@ const Select = ({
 
   return (
     <div className={`w-full ${className}`}>
-      {label && <div className='flex flex-row'><p className="font-medium text-sm mb-2">{label}</p>{tooltip && <RegionTooltip></RegionTooltip>}</div>}
+      <div className='flex flex-row'>
+      {label && <p className="font-medium text-sm mb-2">{label}</p>}
+      {tooltip && <RegionTooltip></RegionTooltip>}
+      </div>
       <select
         name={name}
         autoComplete={autocomplete}
