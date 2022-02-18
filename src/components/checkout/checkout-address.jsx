@@ -57,7 +57,6 @@ const CheckoutAddress = ({ controller }) => {
         formik={controller}
         defaultValue={controller.values.address_2}
       />
-      <SplitField>
         <Select
           label="Country"
           autocomplete="country-code"
@@ -77,7 +76,6 @@ const CheckoutAddress = ({ controller }) => {
           formik={controller}
           defaultValue={controller.values.city}
         />
-      </SplitField>
       <SplitField>
         <Field
           label="State / Province"
