@@ -8,7 +8,7 @@ import styled from 'styled-components'
 
 const regionTooltip = () => {
   return (
-          <div class="py-10 h-full w-full">
+          <div class="w-full">
               <div class="container mx-auto px-6 flex flex-col items-start pl-12 md:pl-0 md:items-center">
                   <div class="h-0 md:h-12"></div>
                       <div class="flex-col md:flex-row flex items-center md:justify-center">
