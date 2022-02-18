@@ -3,7 +3,7 @@ import { useRegion } from "../../hooks/use-region"
 import Field from "../forms/field"
 import Select from "../forms/select"
 import SplitField from "../forms/split-field"
-import RegionTooltip from "../components/checkout/region-tooltip"
+import RegionTooltip from "./region-tooltip"
 
 
 const CheckoutAddress = ({ controller }) => {
