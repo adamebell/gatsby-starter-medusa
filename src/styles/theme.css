@@ -41,3 +41,5 @@ p {
     @apply min-h-screen max-w-screen-2xl mx-auto py-12 px-4 sm:py-8 sm:px-6 lg:px-12;
   }
 }
+
+.info-button:hover~#tooltip2{display: block;}

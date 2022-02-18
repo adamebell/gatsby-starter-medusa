@@ -3,6 +3,8 @@ import { useRegion } from "../../hooks/use-region"
 import Field from "../forms/field"
 import Select from "../forms/select"
 import SplitField from "../forms/split-field"
+import RegionTooltip from "../components/checkout/region-tooltip"
+
 
 const CheckoutAddress = ({ controller }) => {
   const [countries, setCountries] = useState([])
@@ -68,6 +70,7 @@ const CheckoutAddress = ({ controller }) => {
             value: country.iso_2,
           }))}
         />
+        <RegionTooltip></RegionTooltip>
         <Field
           label="City"
           autocomplete="city-code"

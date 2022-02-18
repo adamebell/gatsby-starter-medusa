@@ -8,7 +8,6 @@ import SearchEngineOptimization from "../components/utility/seo"
 import { useCollections } from "../hooks/use-collections"
 import RegionPopover from "../components/header/region-popover"
 
-
 const IndexPage = ({ data }) => {
   const { products, collections } = data
   const prods = data.products.edges.map(edge => edge.node)
