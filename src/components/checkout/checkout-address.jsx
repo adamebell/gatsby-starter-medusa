@@ -60,6 +60,7 @@ const CheckoutAddress = ({ controller }) => {
         <Select
           label="Country"
           autocomplete="country-code"
+          className="mt-4"
           name="country_code"
           formik={controller}
           tooltip="true"
@@ -72,6 +73,7 @@ const CheckoutAddress = ({ controller }) => {
         <Field
           label="City"
           autocomplete="city-code"
+          className="mt-4"
           name="city"
           formik={controller}
           defaultValue={controller.values.city}
