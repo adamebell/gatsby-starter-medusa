@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { classNames } from "../../utils/class-names"
+import RegionTooltip from "../checkout/region-tooltip"
+
 
 const Select = ({
   label,
@@ -9,6 +11,7 @@ const Select = ({
   defaultValue,
   options,
   className,
+  tooltip,
 }) => {
   const [error, setError] = useState(null)
 
@@ -21,6 +24,7 @@ const Select = ({
   return (
     <div className={`w-full ${className}`}>
       {label && <p className="font-medium text-sm mb-2">{label}</p>}
+      {tooltip && <RegionTooltip></RegionTooltip>}
       <select
         name={name}
         autoComplete={autocomplete}

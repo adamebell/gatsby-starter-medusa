@@ -3,7 +3,6 @@ import { useRegion } from "../../hooks/use-region"
 import Field from "../forms/field"
 import Select from "../forms/select"
 import SplitField from "../forms/split-field"
-import RegionTooltip from "./region-tooltip"
 
 
 const CheckoutAddress = ({ controller }) => {
@@ -58,13 +57,13 @@ const CheckoutAddress = ({ controller }) => {
         formik={controller}
         defaultValue={controller.values.address_2}
       />
-        <RegionTooltip></RegionTooltip>
       <SplitField>
         <Select
           label="Country"
           autocomplete="country-code"
           name="country_code"
           formik={controller}
+          tooltip="true"
           defaultValue={controller.values.country_code}
           options={countries.map(country => ({
             label: country.display_name,
