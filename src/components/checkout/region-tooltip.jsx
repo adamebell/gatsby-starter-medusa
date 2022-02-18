@@ -8,9 +8,7 @@ import styled from 'styled-components'
 
 const regionTooltip = () => {
   return (
-          <div class="w-full">
               <div class="container mx-auto px-6 flex flex-col items-start pl-12 md:pl-0 md:items-center">
-                  <div class="h-0 md:h-12"></div>
                       <div class="flex-col md:flex-row flex items-center md:justify-center">
                           <a  tabindex="0" role="link" aria-label="tooltip 2" class="focus:outline-none focus:ring-gray-300 rounded-full focus:ring-offset-2 focus:ring-2 focus:bg-gray-200 relative my-28 md:my-0 md:mx-64" onmouseover="showTooltip(2)" onfocus="showTooltip(2)" onmouseout="hideTooltip(2)">
                               <div class="info-button cursor-pointer">
@@ -38,9 +36,7 @@ const regionTooltip = () => {
                               </div>
                           </a>
                       </div>
-                  <div class="h-12"></div>
               </div>
-          </div>
   )
 }
 
