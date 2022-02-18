@@ -49,7 +49,7 @@ const CheckoutContact = ({ controller }) => {
         className="mt-4"
         name="newsletter"
         formik={controller}
-        options={{label:"Yes",value="yes"},{label:"No",value="no"}}
+        options={[{label:"Yes",value="yes"},{label:"No",value="no"}]}
       />
       </SplitField>
     </div>
