@@ -23,7 +23,7 @@ const Select = ({
 
   return (
     <div className={`w-full ${className}`}>
-      <div className='labelrow'>
+      <div className='flex flex-row items-start'>
       {label && <p className="font-medium text-sm mb-2">{label}</p>}
       {tooltip && <RegionTooltip></RegionTooltip>}
       </div>
