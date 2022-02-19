@@ -38,7 +38,6 @@ const StyledSubmit = styled(Submit)`
 const CheckoutContact = ({ controller }) => {
   return (
     <div className="mt-3 mb-6">
-      <SplitField>
       <Field
         formik={controller}
         name={"email"}
@@ -46,13 +45,6 @@ const CheckoutContact = ({ controller }) => {
         label={"Email"}
         autocomplete="email"
       />
-      <Select
-        label="Would you like to join the mailing list?"
-        className="mt-4"
-        name="newsletter"
-        formik={controller}
-      />
-      </SplitField>
     </div>
   )
 }
