@@ -22,7 +22,7 @@ const Banner = () => {
         "bg-ui-medium h-10 flex items-center justify-between text-sm font-medium text-blue px-4 sm:px-6 lg:px-8"
       )}
     >
-      <p>Welcome to adamebell.games! Grab yourself a game or two, and <a href="https://tinyletter.com/adamebell" target="_blank">join the newsletter!</a></p>
+      <p>Please note that we are having some issues with the site at this time. If you are unable to checkout, please come back later or email me at adamebellgames@gmail.com to manually place an order. Thanks for your patience!</p>
       <button onClick={() => hideBanner()}>&times;</button>
     </div>
   )
